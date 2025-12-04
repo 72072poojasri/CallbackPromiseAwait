@@ -9,7 +9,7 @@
 
 function getUserDetails(id, getUserSubjects){
     console.log("getting user details by userId", id);
-    getUserSubjects({userroll : "678"})
+    getUserDetails({userroll : "678"})
 };
 function getUserSubjects(userroll, getUserMarks){
     console.log("getting user subject by roll number", userroll);
