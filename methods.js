@@ -27,7 +27,7 @@ app.put('/update-user',(req,res)=>{
 
 
 app.delete('/delete-user',(req,res)=>{
-    let userId = req.params.id;
+    let userId = req.params.id; 
     // console.log("Deleting user id:", userId);
     //logic to delete data from your database
     res.send("data deleted");
