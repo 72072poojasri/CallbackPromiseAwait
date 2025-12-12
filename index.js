@@ -27,11 +27,22 @@
 //     console.log(`server running at port ${7007}`);
 // });
 
+// import express from 'express';
+// import router from './routers/studentsRoutes.js';
+// const app = express();
+// app.use(express.json());//Middleware
+// app.use('/',router);
+// app.listen(7007, () => {
+//     console.log(`server running at port ${7007}`);
+// });
 import express from 'express';
 import router from './routers/studentsRoutes.js';
+import cors from 'cors';
 const app = express();
+app.use(cors());
 app.use(express.json());//Middleware
 app.use('/',router);
-app.listen(7007, () => {
+const PORT = 7007;
+app.listen(PORT, () => {
     console.log(`server running at port ${7007}`);
 });
